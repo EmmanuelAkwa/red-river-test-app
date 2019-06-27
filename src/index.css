@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.home{
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+h3, h4 {
+  color:#ee6e73;
+  font-weight: bold;
+}
+.btn {
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.choices {
+  padding-top: 25px;
+  padding-bottom: 60px;
+  height: 600px
+  
+}
+.choices img{
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+.choices .btn{
+  width: 250px
+}
+
+.drinks {
+  padding-top: 25px;
+  padding-bottom: 60px;
+  height:500px;
+}
+.navigate{
+  font-size: 70px;
+  font-weight: bold;
+  
+}
