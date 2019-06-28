@@ -6,7 +6,7 @@ const Header =(props)=> {
         <header >     
         <nav class="nav-wrapper">
           <div class="container">
-            <NavLink to="./home" class="brand-logo left ">Red River Drinks</NavLink>
+            <NavLink to="./home" class="brand-logo">Red River Drinks</NavLink>
             <NavLink to="./home" data-target="mobile-menu" class="sidenav-trigger lefft "><i class="material-icons">menu</i></NavLink>
             <ul className="right hide-on-med-and-down">
               <li><NavLink to="./home">Home</NavLink></li>
