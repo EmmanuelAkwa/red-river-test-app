@@ -11,6 +11,7 @@ class MakeDrink extends Component {
     tea: ['Boil some water', 'Brew the coffee grounds', 'Pour coffee in the cup', 'Add sugar and milk'],
     choice : null
   }
+
   clickedHandler = (e)=>{
     this.setState({
       ...this.state,
@@ -18,10 +19,17 @@ class MakeDrink extends Component {
     })
     console.log(this.state)
   }
- 
+  
+  navBackHandler = (e)=>{
+    this.setState({
+      ...this.state,
+      choice: null
+    })
+  }
+
   render() {
     console.log(this.state)
-    const showDrink =this.state.choice ? <Drinks drinksData={this.state} />:
+    const showDrink =this.state.choice ? <Drinks drinksData={this.state} navBack={this.navBackHandler} />:
      <Choices data = {this.state} clicked= {this.clickedHandler}/>
   return(
     <div>

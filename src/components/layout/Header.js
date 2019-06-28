@@ -1,15 +1,16 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 const Header =(props)=> {
     return (
         <header >     
         <nav class="nav-wrapper">
           <div class="container">
-            <a href="./home" class="brand-logo left ">Red River Drinks</a>
-            <a href="./home" data-target="mobile-menu" class="sidenav-trigger lefft "><i class="material-icons">menu</i></a>
+            <NavLink to="./home" class="brand-logo left ">Red River Drinks</NavLink>
+            <NavLink to="./home" data-target="mobile-menu" class="sidenav-trigger lefft "><i class="material-icons">menu</i></NavLink>
             <ul className="right hide-on-med-and-down">
-              <li><a href="./home">Home</a></li>
-              <li><a href="./makeDrink">Drinks</a></li>
+              <li><NavLink to="./home">Home</NavLink></li>
+              <li><NavLink to="./makeDrink">Drinks</NavLink></li>
 
               <li><a href="" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Twitter">
                 <i class="fab fa-twitter"></i>

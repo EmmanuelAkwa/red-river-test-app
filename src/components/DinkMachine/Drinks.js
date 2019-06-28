@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 // print out of choice of drink recipe
 const Drinks = (props) => {
     const drinksData = props.drinksData
@@ -19,9 +19,9 @@ const Drinks = (props) => {
                         </div>
                         <div className='row'>
                            <div>
-                           <a href='./makeDrink' class="btn-floating btn-large red">
+                           <Link to='./makeDrink' onClick={props.navBack} class="btn-floating btn-large red">
                                  <i class="material-icons">navigate_before</i>
-                            </a>
+                            </Link>
                            </div>
                        </div>
                     </div>
@@ -42,9 +42,9 @@ const Drinks = (props) => {
                        </div>
                        <div className='row'>
                            <div>
-                           <a href='./makeDrink' class="btn-floating btn-large red">
+                           <Link to='./makeDrink'onClick={props.navBack} class="btn-floating btn-large red">
                                  <i class="material-icons">navigate_before</i>
-                            </a>
+                            </Link>
                            </div>
                        </div>
                    </div>      
@@ -64,9 +64,9 @@ const Drinks = (props) => {
                        </div>
                        <div className='row'>
                            <div>
-                           <a href='./makeDrink' class="btn-floating btn-large red">
+                           <Link to='./makeDrink' onClick={props.navBack} class="btn-floating btn-large red">
                                  <i class="material-icons">navigate_before</i>
-                            </a>
+                            </Link>
                            </div>
                        </div>
                    </div>
